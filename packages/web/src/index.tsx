@@ -5,10 +5,11 @@ import * as serviceWorker from "./serviceWorker";
 import { ApolloProvider } from "react-apollo";
 import { client } from "./apollo";
 import registerServiceWorker from "./registerServiceWorker";
+import { Routes } from "./routes";
 
 ReactDOM.render(
   <ApolloProvider client={client}>
-    <App />
+    <Routes />
   </ApolloProvider>,
   document.getElementById("root")
 );
