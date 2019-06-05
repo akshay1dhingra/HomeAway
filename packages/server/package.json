@@ -1,5 +1,5 @@
 {
-  "name": "graphql-ts-server-boilerplate",
+  "name": "@homeaway/server",
   "version": "0.0.1",
   "description": "Awesome project developed with TypeORM.",
   "devDependencies": {
@@ -11,7 +11,7 @@
     "@types/faker": "^4.1.2",
     "@types/glob": "^5.0.35",
     "@types/ioredis": "^3.2.7",
-    "@types/jest": "^22.2.3",
+    "@types/jest": "^24.7.1",
     "@types/node": "^9.6.6",
     "@types/node-fetch": "^1.6.9",
     "@types/request-promise": "^4.1.41",
@@ -54,7 +54,8 @@
     "sparkpost": "^2.1.2",
     "typeorm": "0.2.0",
     "uuid": "^3.2.1",
-    "yup": "^0.24.1"
+    "yup": "^0.24.1",
+    "@homeaway/common": "1.0.0"
   },
   "scripts": {
     "start": "NODE_ENV=development nodemon --exec ts-node src/index.ts",
