@@ -1,4 +1,5 @@
 import * as React from "react";
+import { RegisterController } from "@homeaway/controller";
 import { RegisterView } from "./ui/RegisterView";
 
 export class RegisterConnector extends React.PureComponent {
@@ -8,6 +9,11 @@ export class RegisterConnector extends React.PureComponent {
   };
 
   render() {
-    return <RegisterView submit={this.dummySubmit} />;
+    return (
+      <React.Fragment>
+        <RegisterController />
+        <RegisterView submit={this.dummySubmit} />;
+      </React.Fragment>
+    );
   }
 }
